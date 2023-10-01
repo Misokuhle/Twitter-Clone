@@ -1,0 +1,130 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+   
+}
+
+body {
+    background-color: #fff;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, span {
+    color: black;
+}
+
+.sidebar {
+        background-color: white;
+        color:black;
+}
+
+/* Style for logo */
+.logo {
+    width: 50px;
+    height: 50px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.logo::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: lightgray;
+    color:black;
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.logo:hover::before {
+    opacity: 0.2;
+}
+.container-fluid {
+    color: rgb(255, 255, 255);
+}
+
+img {
+    cursor: pointer;
+    
+}
+
+.nav-icon {
+    width: 100px;
+}
+
+.post-btn {
+    width: 70%;
+    font-weight: bold;
+}
+
+.material-icons {
+    font-size: 30px;
+}
+
+.nav-hover:hover {
+    background-color: white;
+    color:black;
+    cursor: pointer;
+}
+
+.trends-hover:hover {
+    background-color: white;
+    color:black;
+    cursor: pointer;
+}
+
+.posts-hover:hover {
+    background-color: rgb(247, 246, 246);
+    cursor: pointer;
+}
+
+.no-border {
+    border: 0;
+    outline: none;
+    line-break: auto;
+    resize: none;
+}
+
+.sidebar {
+    overflow-y:auto;
+}
+
+.fs-small {
+    font-size: 0.9rem;
+}
+
+.post-actions > div > span, .post-actions > span {
+    font-size: 0.9rem;
+}
+.verified-icon {
+    color: #1162db;
+    font-size: 0.9rem;
+}
+
+.main-top-transparent {
+    background-color: white;
+    color: black;
+    backdrop-filter: blur(20px);
+}
+
+.footer {
+    font-size: 0.8rem;
+}
+
+.footer > span:not(.d-flex):hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.footer > span:nth-child(6) > span:nth-child(1):hover {
+    text-decoration: underline;
+}
+
+.bg-rightbar {
+    background-color: rgb(240, 240, 240);
+    color:black;
+}
